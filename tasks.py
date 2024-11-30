@@ -129,10 +129,8 @@ all(text_hist[key] == value for key, value in token_counts(text).items())
 
 # Your code here:
 # -----------------------------------------------
-token_to_id = _ # Your code here
 
 # Expected output: {'dog': 0, 'quick': 1, 'fox': 2, 'the': 3, 'over': 4, 'lazy': 5, 'brown': 6, 'jumps': 7}
-print(token_to_id)
 # -----------------------------------------------
 
 
@@ -141,7 +139,9 @@ print(token_to_id)
 #
 # Your code here:
 # -----------------------------------------------
-id_to_token = _ # Your code here
+
+# Reversing the mapping
+id_to_token = {v: k for k, v in token2int.items()}
 
 # tests: 
 # test 1
